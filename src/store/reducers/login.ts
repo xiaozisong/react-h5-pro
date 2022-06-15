@@ -1,9 +1,7 @@
 import { RootAction, Token } from "@/types/store"
+import { getToken } from "@/utils/storage"
 
-const initalValues: Token = {
-  refresh_token: '',
-  token: ''
-}
+const initalValues: Token = getToken()
 
 export default function Login(prevState = initalValues, action: RootAction){
   switch (action.type) {

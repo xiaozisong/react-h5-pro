@@ -2,6 +2,7 @@ import { ApiRes, LoginForm } from '@/types/data'
 import { Token } from '@/types/store'
 import { RootThunkAction } from '@/types/store'
 import request from '@/utils/request'
+import { setToken } from '@/utils/storage'
 export const login = (data: LoginForm): RootThunkAction => {
   return async (dispatch, getState) => {
     const res = await request.post<ApiRes<Token>>('/authorizations', data)
@@ -9,5 +10,6 @@ export const login = (data: LoginForm): RootThunkAction => {
       type: 'login/saveToken',
       payload: res.data.data
     })
+    setToken(res.data.data)
   }
 }

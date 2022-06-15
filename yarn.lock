@@ -7479,6 +7479,15 @@ rc-field-form@^1.22.1:
     async-validator "^4.1.0"
     rc-util "^5.8.0"
 
+rc-field-form@^1.27.0:
+  version "1.27.0"
+  resolved "https://registry.npmmirror.com/rc-field-form/-/rc-field-form-1.27.0.tgz#0246d11c2cc5fabf31b53729a2ce029f1297ff77"
+  integrity sha512-4NGYFmb6KpNU5tSqvVr94H88ys3TvoUYqHT3nuFqur2EDpDqIFvVmtWrppmXKTr5X1PuE2Om8FExPt6ErfQ/AQ==
+  dependencies:
+    "@babel/runtime" "^7.18.0"
+    async-validator "^4.1.0"
+    rc-util "^5.8.0"
+
 rc-motion@^2.0.0:
   version "2.6.0"
   resolved "https://registry.npmmirror.com/rc-motion/-/rc-motion-2.6.0.tgz#c60c3e7f15257f55a8cd7794a539f0e2cc751399"
