@@ -10,6 +10,7 @@ export type LoginType = Token
 
 export type LoginAction = {
   type: 'login/saveToken'
+  payload: Token
 }
 
 // ------------------------------------------------------------------------
